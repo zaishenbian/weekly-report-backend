@@ -6,7 +6,7 @@ module.exports = () => {
   return async function auth(ctx, next) {
     const userId = ctx.session.userId;
     const user = await ctx.service.user.findById(userId);
-    if (!user && ctx.request.url !== '/login') {
+    if (!user && ctx.request.url !== '/api/login') {
       ctx.body = {
         code: 2000,
         message: Prompt.USER.USER_NOLOGIN,
