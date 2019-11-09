@@ -33,11 +33,11 @@ module.exports = appInfo => {
 
   // connect mongodb
   config.mongoose = {
-    url: 'mongodb://127.0.0.1:27017',
+    url: 'mongodb://47.105.37.190:27017',
     options: {
       dbName: 'weekly-report',
-      // user: 'cherishSmile',
-      // pass: 'cherishSmile',
+      user: 'root',
+      pass: 'cherishSmile',
     },
   };
 
