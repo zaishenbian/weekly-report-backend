@@ -21,4 +21,8 @@ module.exports = app => {
   // 汇总周报列表接口和汇总周报详情接口
   router.get('/api/reportSummary', adminAuth, controller.report.getReportSummary);
   router.get('/api/reportSummaryList', adminAuth, controller.report.getReportSummaryList);
+
+  // 周报汇总工具
+  // 添加周报
+  router.post('/api/addReport', controller.weekReport.addReport);
 };

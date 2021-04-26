@@ -19,7 +19,8 @@ module.exports = appInfo => {
   };
 
   // add your middleware config here
-  config.middleware = [ 'init', 'auth' ];
+  // config.middleware = [ 'init', 'auth' ];
+  config.middleware = [ 'init' ];
 
   // add your user config here
   const userConfig = {
@@ -33,11 +34,12 @@ module.exports = appInfo => {
 
   // connect mongodb
   config.mongoose = {
-    url: 'mongodb://47.105.37.190:27017',
+    url: 'mongodb://127.0.0.1:27017',
     options: {
       dbName: 'weekly-report',
-      user: 'root',
-      pass: 'cherishSmile',
+      // user: 'root',
+      // pass: 'cherishSmile',
+      useUnifiedTopology: true,
     },
   };
 

@@ -15,6 +15,7 @@ const Prompt = {
   REPORT: {
     REPORT_HAS_EXIST: '该周文档已存在',
     REPORT_ADD_SUCCESS: '文档添加成功',
+    SENDER_AND_DATE_EMPTY: '发送人和日期不能为空',
   },
 };
 module.exports = Prompt;
